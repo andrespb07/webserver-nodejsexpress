@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- head utilizando parciales de HBS -->
+{{> head}}
+
+<body>
+
+    <!-- Contenido página de web-->
+
+    <!--Navbar utilizando parciales de HBS-->
+    {{> navbar }}
+
+    <div class="row">
+        <!-- Columnas-->
+        <div class="col-8">
+            <h1>
+                Venom
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi fuga modi illo provident, itaque minima consectetur in quis placeat architecto doloribus totam eligendi perferendis, quae molestiae sapiente repudiandae fugit.
+            </p>
+        </div>
+
+        <!-- imagen-->
+        <div class="col-4">
+            <img src="assets/img/venom.jpg" class="img-thumbnail">
+        </div>
+    </div>
+    
+    <!-- Pié de página utilizando parciales de HBS-->
+    {{> footer }}
+
+    <!--Bootstrap javascript utilizando parciales de HBS-->
+    {{> enlaceBscript}}
+
+
+</html>

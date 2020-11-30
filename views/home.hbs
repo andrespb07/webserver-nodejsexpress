@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head utilizando parciales de HBS -->
+{{> head}}
+
+<body>
+
+    <!-- Contenido página de web-->
+
+    <!--Navbar utilizando parciales de HBS-->
+    {{> navbar }}
+    
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, {{ formaLetra 'J. andres' }}!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!-- Pié de página utilizando parciales de HBS-->
+    {{> footer }}
+
+    <!--Bootstrap javascript utilizando parciales de HBS-->
+    {{> enlaceBscript}}
+
+
+</body>
+</html>
+
+<!-- En esta sección validaremos un middleware, parciales hbs en el archivo server.js-->
